@@ -1,58 +1,58 @@
 # Buggy PHP Lab
 
-Project PHP mini cho sinh vien thuc hanh tim loi va sua loi.
+Project PHP mini cho sinh viên thực hành tìm lỗi và sửa lỗi.
 
-## Muc tieu bai tap
+## Mục tiêu bài tập
 
-Sinh vien can:
+Sinh viên cần:
 
-1. Chay duoc project trong local.
-2. Tim toi thieu 8 loi trong source code.
-3. Phan loai moi loi vao 1 trong 2 nhom:
+1. Chạy được project trong môi trường local.
+2. Tìm tối thiểu 8 lỗi trong source code.
+3. Phân loại mỗi lỗi vào 1 trong 2 nhóm:
    - `syntax`
    - `logic`
-4. Sua tat ca loi de cac trang hoat dong dung.
+4. Sửa tất cả lỗi để các trang hoạt động đúng.
 
-## Cach chay
+## Cách chạy
 
-Yeu cau:
+Yêu cầu:
 
-- PHP 8.1 tro len
+- PHP 8.1 trở lên
 
-Chay built-in server:
+Chạy built-in server:
 
 ```bash
 php -S localhost:8000
 ```
 
-Mo trinh duyet:
+Mở trình duyệt:
 
 ```text
 http://localhost:8000
 ```
 
-## Cac trang can kiem tra
+## Các trang cần kiểm tra
 
-- `/` hoac `/?page=dashboard`
+- `/` hoặc `/?page=dashboard`
 - `/?page=orders`
 - `/?page=checkout`
 - `/?page=customers`
 - `/?page=reports`
 - `/?page=settings`
 
-## Goi y cho sinh vien
+## Gợi ý
 
-- Co ca loi khien trang bi `parse error`.
-- Co loi khong lam crash trang, nhung tra ra ket qua sai.
-- Khong can database, du lieu mau nam trong thu muc `data/`.
-- Nen dung `php -l <file>` de kiem tra syntax tung file.
+- Có cả lỗi khiến trang bị `parse error`.
+- Có lỗi không làm crash trang, nhưng trả ra kết quả sai.
+- Không cần database, dữ liệu mẫu nằm trong thư mục `data/`.
+- Nên dùng `php -l <file>` để kiểm tra syntax từng file.
 
-## Ket qua mong doi
+## Kết quả mong đợi
 
-Sau khi sua xong:
+Sau khi sửa xong:
 
-- Tat ca route deu mo duoc.
-- So lieu tren dashboard hop ly.
-- Danh sach don hang hien dung.
-- Tinh toan checkout dung logic.
-- Bao cao va cai dat khong con loi syntax.
+- Tất cả route đều mở được.
+- Số liệu trên dashboard hợp lý.
+- Danh sách đơn hàng hiển thị đúng.
+- Tính toán checkout đúng logic.
+- Báo cáo và cài đặt không còn lỗi syntax.
